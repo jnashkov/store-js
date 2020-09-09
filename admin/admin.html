@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./admin.css">
+    <title>Store Project</title>
+</head>
+<body onload="renderTable()">
+    <section class="topnav">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">
+                <!-- <img src="../img/game-logo2.png" alt="logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./order.html">Edit Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link active" href="../cart/cart.html">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <a class="text-white nav-link" href="../index.html">
+                        EXIT
+                    </a>
+                </form>
+            </div>
+        </nav>
+        <div class="container-fluid search-container">
+            <div class="row">
+                <div class="search-bar bg-warning text-dark w-100">
+                    <div class="input-group">
+                        <input id="search" class="form-control search mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <div class="input-group-append">
+                            <a href="">
+                                <ion-icon name="close-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </section>
+    <section class="admin-orders">
+        <div class="container mt-4">
+            <main role="main">
+                <div class="row">
+                    <div class="col">
+                        <h1>ORDERS</h1>
+                        <div class="table-responsive-sm">
+                            <table id="table" class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">ORDER</th>
+                                        <th scope="col">TOTAL</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <footer class="footer-area">
+        <div class="container-fluid">
+            <div class="row mt-5">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-footer">
+                        <h6 class="mb-4">About Us</h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus sed vitae nam velit, fuga nesciunt facere. Cupiditate quisquam eligendi blanditiis?</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-footer">
+                        <h6 class="mb-4">Newsletter</h6>
+                        <p>Stay update with our latest</p>
+                        <div class="signup">
+                            <form class="newsForm">
+                                <input type="text" class="form-control" placeholder="Enter Email">
+                                <button type="submit" class="btn btn-warning">
+                                    <ion-icon name="send-outline"></ion-icon>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-footer">
+                        <h6 class="mb-4">Instagram feed</h6>
+                        <ul class="instagram-feed">
+                            <li>
+                                <img src="./img/morning-brew-eFSUPUeYs3w-unsplash (1).jpg" width="50" height="50">
+                            </li>
+                            <li>
+                                <img src="./img/morning-brew-eFSUPUeYs3w-unsplash (1).jpg" width="50" height="50">
+                            </li>
+                            <li>
+                                <img src="./img/morning-brew-eFSUPUeYs3w-unsplash (1).jpg" width="50" height="50">
+                            </li>
+                            <li>
+                                <img src="./img/morning-brew-eFSUPUeYs3w-unsplash (1).jpg" width="50" height="50">
+                            </li>
+                            <li>
+                                <img src="./img/morning-brew-eFSUPUeYs3w-unsplash (1).jpg" width="50" height="50">
+                            </li>
+                            <li>
+                                <img src="./img/morning-brew-eFSUPUeYs3w-unsplash (1).jpg" width="50" height="50">
+                            </li>
+                            <li>
+                                <img src="./img/morning-brew-eFSUPUeYs3w-unsplash (1).jpg" width="50" height="50">
+                            </li>
+                            <li>
+                                <img src="./img/morning-brew-eFSUPUeYs3w-unsplash (1).jpg" width="50" height="50">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="single-footer">
+                        <h6 class="mb-4">Follow Us</h6>
+                        <p>Let us be social</p>
+                        <div class="social-icons">
+                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-text">
+                    <p>Copyright ©2020 All rights reserved | This site is made with <ion-icon name="heart-outline"></ion-icon> by JN</p>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.29.2/dist/sweetalert2.all.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="./admin.js"></script>
+</body>
+</html>

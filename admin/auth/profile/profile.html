@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./profile.css">
+    <title>Profile</title>
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="row mx-1">
+            <div class="col-lg-10 col-md-10 offset-lg-1 offset-md-1 bg-white shadow my-5 border border-primary">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 p-4 bg-primary divCover">
+                        <img src="../../../img/game-logo2.png" alt="logo">
+                    </div>
+                    <div class="col-lg-6 col-md-6 p-lg-5 p-md-5 px-3 py-4 text-dark">
+                        <div id="profileSection">
+                            <div class="col-12 col-12 mb-3 text-center">
+                                <img id="userAvatar" src="../../../img/game-logo2.png" alt="avatar icon" >
+                            </div>
+                            <div class="col-12 col-12 mb-4 text-center">
+                                <span class="h3" id="userPfFullName">Name</span>
+                                <span class="h3" id="userPfSurname">Surname</span>
+                            </div>
+                            <div class="col-lg-12 col-md-12 mb-4 text-center">
+                                <div class="row">
+                                    <div class="col-2 offset-3 border-right">
+                                        <a id="userPfFb" href="#" target="_blank">
+                                            <ion-icon name="logo-facebook"></ion-icon>
+                                        </a>
+                                    </div>
+                                    <div class="col-2 border-right">
+                                        <a id="userPfTw" href="#" target="_blank">
+                                            <ion-icon name="logo-twitter"></ion-icon>
+                                        </a>
+                                    </div>
+                                    <div class="col-2">
+                                        <a id="userPfIn" href="#" target="_blank">
+                                            <ion-icon name="logo-instagram"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 mb-4 text-center">
+                                <p id="userPfBio">Profile biography</p>
+                            </div>
+                            <div class="col-lg-12 col-md-12 text-center">
+                                <button type="button" class="btn btn-outline-primary btn-block text-uppercase mb-3" onclick="showEditProfileForm()">
+                                Edit Profile<small></small></button>
+                                <a href="../../../index.html" type="button" class="btn btn-outline-primary btn-block text-uppercase mb-3">
+                                    Got to website<small></small></a>
+                                <button type="button" class="btn btn-outline-secondary text-uppercase" onclick="signOut()">
+                                Sign Out<small></small></button>
+                            </div>
+                        </div>
+                        <div id="editProfileForm">
+                            <h2 class="h2 text-center text-dark mb-3">Edit Profile</h2>
+                            <div class="form-group">
+                                <label for="userFullName">Name<span class="text-danger ml-1">*</span></label>
+                                <input type="text" class="form-control" id="userFullName" onblur="checkUserFullName()" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="userSurname">Surname<span class="text-danger ml-1">*</span></label>
+                                <input type="text" class="form-control" id="userSurname" onblur="checkUserSurname()" placeholder="Last Name">
+                                <small id="userSurnameError" class="form-text text-danger">Please fill the field.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="userFacebook">Facebook</label>
+                                <input type="text" class="form-control" id="userFacebook" placeholder="https://www.facebook.com/">
+                            </div>
+                            <div class="form-group">
+                                <label for="userTwitter">Twitter</label>
+                                <input type="text" class="form-control" id="userTwitter" placeholder="https://www.twitter.com/">
+                            </div>
+                            <div class="form-group">
+                                <label for="userInstagram">Instagram</label>
+                                <input type="text" class="form-control" id="userInstagram" placeholder="https://www.instagram.com/">
+                            </div>
+                            <div class="form-group">
+                                <label for="userBio">Biography<span class="text-danger ml-1">*</span></label>
+                                <textarea class="form-control" id="userBio" rows="4" onblur="checkUserBio()"></textarea>
+                             </div>
+                            <button type="button" class="btn btn-outline-primary btn-block text-uppercase mb-3" onclick="saveProfile()">Save</button>
+                            <button type="button" class="btn btn-outline-secondary btn-block text-uppercase" onclick="hideEditProfileForm()">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.29.2/dist/sweetalert2.all.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <!-- <script src="../login/login.js"></script>
+    <script src="../register/register.js"></script> -->
+    <script src="./profile.js"></script>
+</body>
+</html>
