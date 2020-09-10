@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="./contact.css">
     <title>Contact</title>
 </head>
 <body>
     <section class="topnav">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#">Store
+            <a class="navbar-brand" href="../index.html">Store
                 <!-- <img src="img/game-logo2.png" alt="logo"> -->
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@
                         <a class="nav-link" href="#">Contact<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">
+                        <a class="nav-link" href="../cart/cart.html">
                             <ion-icon name="cart-outline"></ion-icon>
                             <span style="color: orangered;" id="cart_n"></span>
                         </a>
@@ -59,8 +59,51 @@
         </div>
     </section>
     <section class="contact-page">
-        <div class="container">
-
+        <div class="container-fluid">
+            <div class="split-layout-contact d-md-flex h-md-100 align-items-center">
+                <div class="side-split-left col-md-6 col-sm-12 col-xs-12 ml-0 p-0 h-md-100 bg-dark">
+                    <div class="contact-info d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
+                        <div class="container">
+                            <div class="info row">
+                                <h4>Address</h4>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="info row">
+                                <h4>Lets Talk</h4>
+                                <p>+389123456789</p>
+                            </div>
+                            <div class="info row">
+                                <h4>General Support</h4>
+                                <p>contact@example.com</p>
+                            </div>                               
+                        </div>
+                    </div>
+                </div>
+                <div class="side-split-right col-md-6 col-sm-12 col-xs-12 p-0 h-md-100 bg-light">
+                    <div class="contact-form-inputs d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
+                        <div class="row">
+                            <form id="contactForm" class="contactForm">
+                                <div class="row text-center justify-content-center p-5">
+                                    <h2>Send Us A Message</h2>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-name">Tell us your name*</label>
+                                    <input type="text" id="contact-name" class="form-control rounded-0" placeholder="Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email">Enter  your email*</label>
+                                    <input type="email" id="contact-email" class="form-control rounded-0" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-message">Write your message*</label>
+                                    <textarea type="text" id="contact-message" class="form-control rounded-0" placeholder="Message" required></textarea>   
+                                </div>
+                                <button class="draw" type="submit">Send</button>
+                            </form>                
+                        </div>     
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -78,10 +121,10 @@
                         <h6 class="mb-4">Newsletter</h6>
                         <p>Stay update with our latest</p>
                         <div class="signup">
-                            <form class="newsForm">
-                                <input type="text" class="form-control" placeholder="Enter Email">
-                                <button type="submit" class="btn btn-warning">
-                                    <ion-icon name="send-outline"></ion-icon>
+                            <form class="newsForm" id="newsForm">
+                                <input type="email" id="email" class="form-control" placeholder="Enter Email">
+                                <button type="submit" class="btn btn-warning mail-button">
+                                    <ion-icon name="mail-outline"></ion-icon>
                                 </button>
                             </form>
                         </div>
@@ -90,30 +133,30 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="single-footer">
                         <h6 class="mb-4">Instagram feed</h6>
-                        <ul class="instagram-feed">
+                        <ul class="instagram-feed d-flex">
                             <li>
-                                <img src="./img/morning-brew-eFSUPUeYs3w-unsplash (1).jpg" width="50" height="50">
+                                <img src="./img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg" width="50" height="50">
                             </li>
                             <li>
-                                <img src="./img/morning-brew-eFSUPUeYs3w-unsplash (1).jpg" width="50" height="50">
+                                <img src="./img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg" width="50" height="50">
                             </li>
                             <li>
-                                <img src="./img/morning-brew-eFSUPUeYs3w-unsplash (1).jpg" width="50" height="50">
+                                <img src="./img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg" width="50" height="50">
                             </li>
                             <li>
-                                <img src="./img/morning-brew-eFSUPUeYs3w-unsplash (1).jpg" width="50" height="50">
+                                <img src="./img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg" width="50" height="50">
                             </li>
                             <li>
-                                <img src="./img/morning-brew-eFSUPUeYs3w-unsplash (1).jpg" width="50" height="50">
+                                <img src="./img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg" width="50" height="50">
                             </li>
                             <li>
-                                <img src="./img/morning-brew-eFSUPUeYs3w-unsplash (1).jpg" width="50" height="50">
+                                <img src="./img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg" width="50" height="50">
                             </li>
                             <li>
-                                <img src="./img/morning-brew-eFSUPUeYs3w-unsplash (1).jpg" width="50" height="50">
+                                <img src="./img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg" width="50" height="50">
                             </li>
                             <li>
-                                <img src="./img/morning-brew-eFSUPUeYs3w-unsplash (1).jpg" width="50" height="50">
+                                <img src="./img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg" width="50" height="50">
                             </li>
                         </ul>
                     </div>
@@ -144,6 +187,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-database.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.29.2/dist/sweetalert2.all.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="./contact.js"></script>

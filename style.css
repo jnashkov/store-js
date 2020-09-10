@@ -132,9 +132,9 @@
 }
 
 /*SPLIT SCREEN*/
-.split-layour .container-fluid {
-    margin-left: 0;
-    margin-right: 0;
+.split-layout .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 @media (min-width: 768px) {
@@ -248,6 +248,17 @@
 
 .newsForm {
     display: inline-flex;
+}
+
+.newsForm ion-icon {
+    font-size: 20px;
+}
+
+.mail-button {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .instagram-feed {

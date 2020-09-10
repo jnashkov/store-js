@@ -252,7 +252,7 @@ form.addEventListener('submit', (e) => {
       title: 'Oops...',
       text: "Please enter a valid email address, such as john@example.com.",
       type: 'error',
-  })
+    })
   } else {
     swal({
       title:'Subscribed',

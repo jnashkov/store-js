@@ -1,0 +1,64 @@
+.contact-page .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: start;
+    padding: 20px;
+    margin: 20px;
+}
+
+.info h4 {
+    color: #f8f9fa;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.info p {
+    color: rgb(44, 163, 33);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.contactForm h2 {
+    font-weight: 300;
+}
+
+.contactForm .form-group label {
+    margin-bottom: 0;
+    padding: 10px;
+    display: flex;
+    text-align: start;
+    text-transform: uppercase;
+    border: .5px solid;
+    border-bottom: 0;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.contactForm .form-group input,
+.contactForm .form-group textarea {
+    padding: 10px;
+    border: .5px solid;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.contactForm button {
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 1em 2em;
+    box-shadow: inset 0 0 0 2px rgb(44, 163, 33);
+    color: rgb(44, 163, 33);
+    font-size: inherit;
+    font-weight: 500;
+    position: relative;
+    vertical-align: middle;
+}
+
