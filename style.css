@@ -232,14 +232,13 @@
     color: black;
 }
 
-
-
-
 /*FOOTER*/
 .footer-area {
+    position: relative;
     background-color: #343a40;
     color: white;
     padding: 20px;
+    bottom: 0;
 }
 
 .single-footer ul li {
@@ -299,7 +298,9 @@
 
 /* responsive design */
 @media (max-width: 576px) {
-
+    .single-footer {
+        padding: 10px;
+    }
 }
 
 @media (max-width: 768px) {

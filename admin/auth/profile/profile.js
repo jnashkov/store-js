@@ -55,6 +55,42 @@ function hideEditProfileForm() {
     document.getElementById('editProfileForm').style.display = 'none';
 }
 
+function checkUserFullName() {
+    let userSurname = document.getElementById('userFullName').value; 
+    let flag = false;
+    if (userSurname == '') {
+        flag = true;
+    }
+    if(flag) {
+        document.getElementById('userFullNameError').style.display = 'block';
+    } else {
+        document.getElementById('userFullNameError').style.display = 'none';
+    }
+}
+
+function checkUserSurname() {
+    let userSurname = document.getElementById('userSurname').value;
+    let flag = false;
+    if(userSurname == '') {
+        flag = true;
+    }
+    if(flag) {
+        document.getElementById('userSurname').style.display = 'block';
+    } else {
+        document.getElementById('userSurname').style.display = 'none';
+    }
+}
+
+function checkUserBio() {
+    let userBio = document.getElementById('userBio').value;
+    let flag = false;
+    if(flag) {
+        document.getElementById('userBioError').style.display = 'block';
+    } else {
+        document.getElementById('userBioError').style.display = 'none';
+    }
+}
+
 function saveProfile() {
     let userFullName = document.getElementById('userFullName').value;
     let userSurname = document.getElementById('userSurname').value;
@@ -98,6 +134,7 @@ function saveProfile() {
         })
     }
 }
+
 
 function signOut() {
     firebase.auth().signOut().then(function(){

@@ -26,3 +26,26 @@
     text-decoration: none;
 }
 
+/* responsive design */
+@media (max-width: 576px) {
+    .settings {
+        display: inline-flex;
+        flex-direction: row;
+    }
+
+    .settings h5 {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
